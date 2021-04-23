@@ -1,0 +1,18 @@
+@nombre prueba
+
+@atributo salario 	real
+@attribute nivel-academico	{bachillerato, profesional, posgrado}
+
+@data
+110,bachillerato
+120,bachillerato
+130,bachillerato
+150,profesional
+165,bachillerato
+190,profesional
+200,profesional
+205,posgrado
+215,profesional
+225,posgrado
+240,posgrado
+280,posgrado
