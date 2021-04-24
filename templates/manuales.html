@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>App-selection</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.2.8/d3.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="{{ url_for('static', filename='js/action.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/Chart.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/graficar.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/sweetalert.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <section class="row">
+          <div class="col-md-3 text-center">
+            <img id="lgF" src="../static/images/Logo_UNIR.png" alt="img " class="img-fluid">
+          </div>
+          <div class="col-md-6 text-center">
+            <h1 class="text-center" id = 'tituloapp' >Entropy-SelApp</h1>
+          </div>
+          <div class="col-md-3 text-center">
+            <img id="lgF" src="../static/images/Logo_UNIR.png" alt="img " class="img-fluid">
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="manuales">Manuals <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+<br>
+
+<div class="container">
+  <section class="row">
+
+    <div class="col-md-4">
+      <h3>Manual de usuario</h3>
+      <hr/>
+      <p>Aquí usted puede descargar el manual de usuario de Entropy-SelApp</p>
+      <hr/>
+      <div class="col-md-12 text-center">
+        <a href="{{ url_for('static', filename='manuales/Entropy-SelApp -  Manual de Usuario.pdf') }}" download="Manual Usuario" class="text-center"><img id="manualUsuario" src="{{ url_for('static', filename='images/LogoPDF.png') }}" alt="img caron" class="img-fluid"></a>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <h3>Manual Instalación</h3>
+      <hr/>
+      <p>Aquí usted puede descargar el manual de instalación de Entropy-SelApp</p>
+      <hr/>
+      <div class="col-md-12 text-center">
+        <a href="{{ url_for('static', filename='manuales/Entropy-SelApp -  Manual Tecnico.pdf') }}" download="Manual Instalacion"><img id="manualInstalacion" src="{{ url_for('static', filename='images/LogoPDF.png') }}" alt="img caron" class="img-fluid"></a>
+      </div>
+    </div>
+
+
+    <div class="col-md-4">
+      <h3>Github Repository</h3>
+      <hr/>
+      <p>Aquí usted puede encontrarl el repositorio de Github de Entropy-SelApp</p>
+      <hr/>
+      <div class="col-md-12 text-center">
+        <a href="https://github.com/AndresRestrepoRodriguez/Entropy-SelApp" target="_blank"><img id="github" src="{{ url_for('static', filename='images/logoGit.png') }}" alt="img caron" class="img-fluid"></a>
+      </div>
+
+    </div>
+
+  </section>
+</div>
+
+<br>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 card text-white bg-dark" id="zonCopyRight">
+      <div class="card-body">
+        <p class="card-text" align="center">GICOGE <i class="fa fa-copyright" aria-hidden="true"></i> 2019-2020</p>
+        <p class="card-text" align="center">Grupo de Investigación Internacional en Informática, Comunicación y Gestión del Conocimiento</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="{{ url_for('static', filename='js/downloadImages.js') }}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
